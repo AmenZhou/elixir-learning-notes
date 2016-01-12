@@ -19,3 +19,16 @@ defmodule Drop do
     :math.sqrt(2 * 3.71 * distance)
   end
 end
+
+pid1 = spawn(MphDrop, :mph_drop, [])
+|
+send pid1, :earth, 20
+  |
+  |-> call - MphDrop.mph_drop
+         |-> new process for Drop
+         |-> new process for MphDrop
+         |-> send three arguments into Drop process
+               |-> self(), :earth, 20
+  |
+  |-> Drop send message back to MphDrop
+  |-> MphDrop print the result
