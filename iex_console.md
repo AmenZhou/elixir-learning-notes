@@ -1,6 +1,4 @@
 # DEBUG
 
 ### IEx
-
-#continue
-*respawn*
+continue -- *respawn*
