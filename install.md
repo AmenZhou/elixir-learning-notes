@@ -9,6 +9,7 @@
    `sudo yum --nogpgcheck localinstal esl-erlang_19.2~centos~6_amd64.rpm`
 
 * Install Elixir
+   
    `git clone https://github.com/elixir-lang/elixir.git`
    
    `make clean test`
